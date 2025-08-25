@@ -18,7 +18,8 @@ import {
   AlertCircle,
   CreditCard,
   UserCheck,
-  UserX
+  UserX,
+  Upload
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 
@@ -292,6 +293,15 @@ export default function EventsPage() {
                     <p className="text-slate-400 text-sm">{event.description}</p>
                   </div>
                   <div className="flex items-center gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => exportMembersList(event)}
+                      className="border-slate-600 text-slate-300 hover:bg-slate-700"
+                    >
+                      <Upload className="h-4 w-4 mr-2" />
+                      Upload Attendance
+                    </Button>
                     <Button
                       variant="outline"
                       size="sm"
