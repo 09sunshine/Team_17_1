@@ -306,10 +306,7 @@ export function EventRegistrationForm() {
             type="submit"
             className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-medium py-3 cursor-pointer"
             disabled={isSubmitting}
-            onClick={(e) => {
-              console.log("[v0] Button clicked")
-              console.log("[v0] Is submitting:", isSubmitting)
-            }}
+            onClick={() => window.location.href = "/form/thank-you"}
           >
             {isSubmitting ? "Submitting Registration..." : "Complete Registration"}
           </Button>

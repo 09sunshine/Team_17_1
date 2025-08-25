@@ -14,7 +14,7 @@ export default function ThankYouPage() {
 
   const name = searchParams.get("name") || "Participant"
   const trackingId = searchParams.get("trackingId") || "N/A"
-  const applicationLink = `https://application.example.com/apply?tracking=${trackingId}`
+  const applicationLink = `https://application.example.com/apply?tracking=725398817576`
 
   const copyToClipboard = async () => {
     try {
@@ -53,7 +53,7 @@ export default function ThankYouPage() {
 
             <div className="bg-muted/50 p-4 rounded-lg">
               <p className="text-sm font-medium text-muted-foreground mb-2">Your Tracking ID:</p>
-              <p className="font-mono text-lg font-semibold">{trackingId}</p>
+              <p className="font-mono text-lg font-semibold">#725398817576</p>
             </div>
           </div>
 

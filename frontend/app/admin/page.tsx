@@ -70,7 +70,7 @@ export default function AdminDashboard() {
 
     try {
       // Registration form URL for the event
-      const registrationUrl = `${window.location.origin}/register/${eventId}`;
+      const registrationUrl = `${window.location.origin}/form`;
       
       const canvas = canvasRef.current;
       if (canvas) {

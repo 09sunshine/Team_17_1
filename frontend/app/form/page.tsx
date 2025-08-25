@@ -6,8 +6,8 @@ export default function Home() {
     <main className="min-h-screen bg-background py-12 px-4">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-8">
-          <h1 className="font-playfair text-4xl font-bold text-foreground mb-4">Academic Conference 2024</h1>
-          <p className="text-muted-foreground text-lg">Join us for an inspiring day of learning and networking</p>
+          <h1 className="font-playfair text-4xl font-bold text-foreground mb-4">Future Tech Conference</h1>
+          <p className="text-muted-foreground text-lg">Event Id: 68ac122b6455a8cd5a528f2</p>
         </div>
         <EventRegistrationForm />
       </div>
