@@ -1,7 +1,14 @@
+"use client"
+import React from "react"
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Calendar, Users, MapPin } from "lucide-react"
 
 export function HeroSection() {
+  function scrollToSection(sectionId: string) {
+    const el = document.getElementById(sectionId);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5 py-20 sm:py-32">
       <div className="absolute inset-0 bg-grid-pattern opacity-5" />
@@ -17,13 +24,11 @@ export function HeroSection() {
             exciting events in your area.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="text-lg px-8 py-6 group">
+            <Button size="lg" className="text-lg px-8 py-6 group" onClick={() => scrollToSection("events")}>
               Explore Events
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6 bg-transparent">
-              Create Event
-            </Button>
+            
           </div>
 
           {/* Stats */}

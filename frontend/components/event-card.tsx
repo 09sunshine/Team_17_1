@@ -1,3 +1,5 @@
+'use client'
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -75,8 +77,8 @@ export function EventCard({ event }: EventCardProps) {
       </CardContent>
 
       <CardFooter className="p-6 pt-0">
-        <Button className="w-full group/btn">
-          Learn More
+        <Button className="w-full group/btn" onClick={() => window.location.href = `/form`}>
+          Register
           <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
         </Button>
       </CardFooter>

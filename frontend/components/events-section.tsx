@@ -77,7 +77,7 @@ const events = [
 
 export function EventsSection() {
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-muted/30" id="events">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="text-center mb-16">
           <h2 className="font-space-grotesk font-bold text-3xl sm:text-4xl lg:text-5xl mb-4">Upcoming Events</h2>
